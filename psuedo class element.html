@@ -1,0 +1,42 @@
+</html>
+</head>
+<title>psuedo class element</title>
+    <style>
+        h2::first-letter{
+            color:rgb(33, 150, 51);
+            font-size:50px;
+
+        }
+        p::first-line{
+            color:coral;
+           
+        }
+        
+        h2::before{
+            content: "Its";
+            color:burlywood
+        }
+        p::after{
+            content: "psuedo class selector";
+            background-color: rgb(211, 33, 239);
+            color:rgb(21, 82, 57);
+            font-size: 20px;
+
+        }
+        p::selection{
+            color:rgb(2, 63, 116);
+            background-color:palevioletred;
+        }
+
+    </style>
+<body>
+
+    <p>Useful when the new dataset is small, as it minimizes overfitting by reducing the number of parameters to be trained.
+        Useful when the new dataset is small, as it minimizes overfitting by reducing the number of parameters to be trained
+    </p>
+    <h2>First child</h2>
+    
+    
+    
+</body>
+</html>

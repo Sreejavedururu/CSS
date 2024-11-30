@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Animations</title>
+        <style>
+            .animate{
+                background-color: cadetblue;
+                height: 300px;
+                width: 250px;
+                animation-name: sree;
+                animation-duration: 5s;
+                animation-iteration-count: 4;
+                animation-direction: alternate-reverse;
+                animation-fill-mode: forwards;
+                
+            }
+            .animate:hover{
+                animation-play-state: paused;
+            }
+            @keyframes sree{
+                from{
+                    height: 250px;
+                    background-color: darkgreen;
+                    transform: perspective(400px);
+                }
+                to{
+                    width: 400px;
+                    background-color: rgb(108, 108, 158);
+                }
+            }
+        </style>
+    </head>
+<body>
+    <div class="animate">
+        <p>Animations</p>
+    </div>
+</body>
+</html>

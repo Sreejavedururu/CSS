@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Flex properties
+        </title>
+        <style>
+            .parent{
+                border:3px solid rgb(43, 195, 226);
+                height:600px;
+                width:2000px;
+                display:flex;
+                flex-wrap:wrap;
+                /*justify-content: space-evenly;*/
+            }
+                
+            .child{
+                height:100px;
+                width:600 px;
+                
+
+            }
+            #c1{
+                background-color:blue;
+                color: chartreuse;
+                order:30;
+                /*flex-grow: 1;*/
+                /*flex-shrink: 1; */ 
+                /*align-self: flex-start;  */        }
+            #c2{
+                background-color:rgb(140, 255, 0);
+                color:cornflowerblue;
+                order:10;
+                /*flex-grow: 2;*/
+                /*align-self:center;*/
+                flex:3 2 auto;
+               
+            }
+            #c3{
+                background-color:beige;
+                color:blueviolet;
+                order:20;
+               /* flex-grow: 3;*/
+                /*flex-basis:100px;*/
+                /*align-self: flex-end;*/
+            }
+           
+
+        </style>
+    </head>
+<body>
+    <div class="parent">
+    <div class="child" id="c1">child 1</div>
+    <div class="child" id="c2">child 2</div>
+    <div class="child" id="c3">child 3</div>
+    
+    
+    </div>
+
+</body>
+
+</html>
